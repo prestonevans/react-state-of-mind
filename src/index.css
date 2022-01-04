@@ -5,8 +5,38 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.counter p {
+  min-width: 3ch;
+  text-align: center;
+}
+.counter button {
+  border-radius: 50%;
+  border-style: none;
+  height: 30px;
+  width: 30px;
+  color: white;
+  background-color: cadetblue;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.105);
+  transition: .2s ease-in;
+}
+.counter button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.counter button:active {
+  box-shadow: 0px 0px 5px 2.5px rgba(0, 0, 0, 0.105);
+  transform: scale(1);
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
